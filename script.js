@@ -284,14 +284,10 @@ if(gameOver){
 
 ctx.textAlign="center";
 
-ctx.fillStyle="red";
-ctx.font="40px Arial";
-ctx.fillText("Sai Died",200,180);
-
-if(showCertificate){
-
 ctx.fillStyle="rgba(0,0,0,0.7)";
 ctx.fillRect(0,0,canvas.width,canvas.height);
+
+if(showCertificate){
 
 if(popupScale<1){
 popupScale+=0.03;
@@ -309,6 +305,10 @@ height
 );
 
 }
+
+ctx.fillStyle="red";
+ctx.font="40px Arial";
+ctx.fillText("Sai Died",200,70);
 
 if(Date.now()-deathTimer>3000){
 
